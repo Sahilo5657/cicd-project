@@ -1,11 +1,11 @@
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask(StudentApp)
 
 @app.route("/")
 def hello():
     app.logger.info("Hello World logged from Azure!")
     return "Hello World from Azure CI/CD Pipeline!"
 
-if __name__ == "__main__":
+if StudentApp == "__main__":
     app.run()
